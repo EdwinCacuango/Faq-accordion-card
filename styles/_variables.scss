@@ -1,0 +1,28 @@
+
+// Text colors
+$very-dark-grayish: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+// Gradient-bg
+$first-color-gradient: hsl(273, 75%, 66%);
+$second-color-gradient: hsl(240, 73%, 65%);
+$linear-gradient-bg: ($first-color-gradient, $second-color-gradient);
+
+// Line dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+// Fonts
+$principal-font:'Kumbh Sans', sans-serif;
+
+@mixin titles() {
+    font-weight: 700;
+    color:$very-dark-grayish;
+}
+@mixin flexCenter($direction, $horizontal:center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: center;
+    flex-direction: $direction;    
+}
+
+
