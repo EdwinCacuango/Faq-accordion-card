@@ -7,6 +7,7 @@ box-sizing: inherit;
 }
 
 body{
+    min-height: 100vh;
     background-image: linear-gradient($linear-gradient-bg);
     font-family: $principal-font;
     font-size: 0.75rem;

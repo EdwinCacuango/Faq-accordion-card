@@ -16,13 +16,26 @@ $principal-font:'Kumbh Sans', sans-serif;
 
 @mixin titles() {
     font-weight: 700;
+    font-size: 2rem;
     color:$very-dark-grayish;
 }
+
+//Short methods
 @mixin flexCenter($direction, $horizontal:center) {
     display: flex;
     justify-content: $horizontal;
     align-items: center;
     flex-direction: $direction;    
 }
+
+@mixin oneBlock ($bgElement,$frontElement){
+ #{$bgElement}, #{$frontElement}{
+     grid-column:1;
+     grid-row:1;
+ }
+}
+
+
+
 
 
