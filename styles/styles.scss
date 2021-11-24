@@ -1,5 +1,6 @@
 @import "variables";
 @import "globals";
+@import "acordeon-styles";
 
 
 .card{
@@ -7,7 +8,10 @@
 }
 
 .card-component{
-    margin-top: 50%;
+    // elimina estos endessktopp version
+    margin-top: 35%;
+    margin-bottom: 10%;
+    // 
     max-width: 20.5rem;
     @include flexCenter(column);
     background-color: white;
@@ -34,9 +38,10 @@
     }
     .btn-question{
         padding: 0;
-        max-width: 100%;
+        width: 100%;
         background-color: transparent;
         border: none;
-        @include flexCenter (row, space-around);
+        @include flexCenter (row, space-between);
     }
 }
+

@@ -20,6 +20,14 @@ body {
   color: #787887;
 }
 
+.collapse {
+  display: none;
+}
+
+.activate {
+  font-weight: bold;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +45,8 @@ body {
 }
 
 .card-component {
-  margin-top: 50%;
+  margin-top: 35%;
+  margin-bottom: 10%;
   max-width: 20.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,14 +103,15 @@ body {
 
 .text-card .btn-question {
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   background-color: transparent;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
