@@ -1,13 +1,18 @@
-const btnQuestion = document.querySelectorAll(".btn-question");
-const answer=document.querySelectorAll(".answer")
+const btnQuestion = document.getElementsByClassName("btn-question");
+const answers = document.getElementsByClassName("answer");
 
-const selectedBtn=(event)=>{
-    const selectTarget=event.target.id
-   }
+// console.log(answers);
 
-btnQuestion.forEach((btn) => {
-  btn.addEventListener("click", (selectedBtn)
-  );
-});
+for (let i = 0; i < btnQuestion.length; i++) {
+  btnQuestion[i].addEventListener("click", function() {
+
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 
