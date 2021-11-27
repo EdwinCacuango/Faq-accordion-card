@@ -6,7 +6,6 @@
 .card{
 @include flexCenter(column);
 }
-
 .card-component{
     // elimina estos endessktopp version
     margin-top: 35%;
@@ -17,11 +16,9 @@
     background-color: white;
     border-radius: 1.5rem;  
 }
-
 .image-card{
     max-width: 14.6875rem;
 }
-
 .principal-img{
     margin-top:-45%;
     margin-bottom: 0;
@@ -35,55 +32,75 @@
 
 .text-card{  
     @include flexCenter(column);
+    height: 21.875rem;
     padding: 1.5625rem;
     h1{
         @include titles();
     }
-    .btn-question{
-        padding: 0;
+    .questions{
         width: 100%;
+    }
+    .btn-question{
+        width: 100%;
+        padding: 0;
         background-color: transparent;
         border: none;
         @include flexCenter (row, space-between);
     }
 }
-
-@media (min-width:900px) {
+@media (min-width:1000px) {
     .card-component{
         @include flexCenter(row);
         max-width: 57.5rem;
         margin:0;
     }
     .image-card{
-        overflow: hidden;
         display:grid;
         max-width: 29.6875rem;
         .box, .image-container{
             grid-column: 1;
             grid-row: 1;
         }
-
         .box{
             display: block;
+            z-index: 1;
             overflow: visible;
-            margin-left: -25%;
+            margin-top: 45%;
+            margin-left: -20%;
         }
+        .image-container{
+            overflow: hidden;
+        }
+
         .principal-img, .shadow-img{
             max-width: 100%;
         }
         .principal-img{
+            z-index: 0;
+            
             margin-top: 4.6875rem;
-            margin-left: -6.5625rem;
+            margin-left: -4.5625rem;
             content: url(/images/illustration-woman-online-desktop.svg);
-
         }
         .shadow-img{
-                 content: url(/images/bg-pattern-desktop.svg);
-                margin-top:-90%; 
-                margin-left:-6.5625rem;
+                content: url(/images/bg-pattern-desktop.svg);
+                margin-top: -85%;
+                margin-left:-4.5625rem
         }
     }
     .text-card{
-        max-width: 27.8125rem;
+        width: 27.8125rem;
+        padding: 0 6.6875rem 0 0;
+      
+        .single-questions{
+            border-bottom:1px solid $line-divider;
+            .btn-question{
+                margin: 1.5rem 0 1.5rem 0;
+            }
+        }
+        h1{
+            align-self: flex-start;
+            margin:0;
+        }
     }
 }

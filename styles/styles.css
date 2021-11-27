@@ -31,6 +31,12 @@ main {
   font-weight: bold;
 }
 
+.answer {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +105,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 21.875rem;
   padding: 1.5625rem;
 }
 
@@ -108,9 +115,13 @@ main {
   color: #4a4b5e;
 }
 
-.text-card .btn-question {
-  padding: 0;
+.text-card .questions {
   width: 100%;
+}
+
+.text-card .btn-question {
+  width: 100%;
+  padding: 0;
   background-color: transparent;
   border: none;
   display: -webkit-box;
@@ -128,7 +139,7 @@ main {
           flex-direction: row;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .card-component {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,7 +158,6 @@ main {
     margin: 0;
   }
   .image-card {
-    overflow: hidden;
     display: -ms-grid;
     display: grid;
     max-width: 29.6875rem;
@@ -160,24 +170,42 @@ main {
   }
   .image-card .box {
     display: block;
+    z-index: 1;
     overflow: visible;
-    margin-left: -25%;
+    margin-top: 45%;
+    margin-left: -20%;
+  }
+  .image-card .image-container {
+    overflow: hidden;
   }
   .image-card .principal-img, .image-card .shadow-img {
     max-width: 100%;
   }
   .image-card .principal-img {
+    z-index: 0;
     margin-top: 4.6875rem;
-    margin-left: -6.5625rem;
+    margin-left: -4.5625rem;
     content: url(/images/illustration-woman-online-desktop.svg);
   }
   .image-card .shadow-img {
     content: url(/images/bg-pattern-desktop.svg);
-    margin-top: -90%;
-    margin-left: -6.5625rem;
+    margin-top: -85%;
+    margin-left: -4.5625rem;
   }
   .text-card {
-    max-width: 27.8125rem;
+    width: 27.8125rem;
+    padding: 0 6.6875rem 0 0;
+  }
+  .text-card .single-questions {
+    border-bottom: 1px solid #e7e7e9;
+  }
+  .text-card .single-questions .btn-question {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  .text-card h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
