@@ -99,6 +99,7 @@ h1, h2 {
 }
 
 .text-card {
+  overflow-y: scroll;
   padding: 1.5625rem;
 }
 
