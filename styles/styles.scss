@@ -29,41 +29,7 @@
   display: none;
 }
 
-.text-card {
-  @include flexCenter(column);
-  height: 21.875rem;
-  padding: 1.5625rem;
-  h1 {
-    @include titles();
-  }
-  .questions {
-    width: 100%;
-  }
 
-  .single-question{
-      max-height: 6.125rem;
-  }
-  .btn-question {
-    width: 100%;
-    margin: 1.25rem 0 0.625rem;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    @include flexCenter(row, space-between);
-
-  }
-
-  .answer {
-    padding: 0;
-    margin-top: 0;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    p{
-        margin:0
-    }
-  }
-}
 @media (min-width: 1000px) {
   .card-component {
     @include flexCenter(row);
@@ -103,19 +69,6 @@
       content: url(/images/bg-pattern-desktop.svg);
       margin-top: -85%;
       margin-left: -4.5625rem;
-    }
-  }
-  .text-card {
-    width: 27.8125rem;
-    padding: 0 6.6875rem 0 0;
-
-    .single-question {
-      border-bottom: 1px solid $line-divider;
-      
-    }
-    h1 {
-      align-self: flex-start;
-      margin: 0;
     }
   }
 }
