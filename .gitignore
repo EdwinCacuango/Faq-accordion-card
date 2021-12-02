@@ -12,6 +12,5 @@
 *.fig
 
 # Avoid your project being littered with annoying .DS_Store files!
-node_modules/
 .DS_Store
 .prettierignore
