@@ -36,6 +36,14 @@ h1, h2 {
           transform: rotate(180deg);
 }
 
+.collapse_answer {
+  display: none;
+}
+
+.open-answer {
+  display: block;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,16 +157,6 @@ h1, h2 {
   color: orange;
 }
 
-.text-card .btn-question:focus {
-  outline: 1px dotted;
-  padding: 0.5rem 0;
-  color: inherit;
-}
-
-.text-card .answer {
-  display: none;
-}
-
 p {
   margin: 0;
 }
@@ -178,6 +176,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-height: 510px;
     max-width: 57.5rem;
     margin: 0;
   }
@@ -224,6 +223,9 @@ p {
   .text-card h1 {
     text-align: left;
     margin-bottom: 1.5rem;
+  }
+  .text-card .single-question {
+    width: 348px;
   }
   .text-card .btn-question {
     margin-right: 4.375rem;
