@@ -1,0 +1,6 @@
+.open{
+    font-weight: bold;
+    &::after{
+        transform: rotate(180deg);
+    }
+  }

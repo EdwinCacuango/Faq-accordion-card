@@ -1,12 +1,13 @@
 @import "variables";
 @import "globals";
+@import "accordion-styles";
 
 
 .card {
   @include flexCenter(column);
 }
 .card-component {
-  // elimina estos endessktopp version
+  // elimina estos en desktop version
   margin-top: 35%;
   margin-bottom: 10%;
   //
@@ -28,6 +29,57 @@
 .box {
   display: none;
 }
+
+.text-card{
+  padding: 1.5625rem;
+  h1{
+    font-size: 1.625rem;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    margin-bottom: 1.625rem;
+  }
+  .single-question{
+    border-bottom:1px solid $line-divider ;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .btn-question{
+      width: 100%;
+      @include flexCenter(row, space-between);
+      border:none;
+      background: transparent;
+      padding: 0;
+      margin-right: 1.8125rem;
+      margin-bottom: 1rem;
+      &::after{
+        content: "";
+        display: block;
+        width:0.625rem;
+        height:0.625rem ;
+        background-image: url(/images/icon-arrow-down.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: transform 300ms ease-in-out;
+      }
+      &:hover{
+        color:orange;
+      }
+      &:focus{
+      outline: 1px dotted;
+      padding: 0.5rem 0;
+      color:inherit;
+      }
+  }
+  .answer{
+    display: none;
+  }
+}
+p{
+  margin:0;
+}
+
 
 
 @media (min-width: 1000px) {
@@ -70,5 +122,16 @@
       margin-top: -85%;
       margin-left: -4.5625rem;
     }
+  }
+  .text-card{
+    padding: 5.25rem 5.875rem 5.25rem 0;
+    h1{
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .btn-question{
+     margin-right: 4.375rem;
+    }
+
   }
 }

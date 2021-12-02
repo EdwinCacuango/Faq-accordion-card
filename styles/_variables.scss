@@ -21,7 +21,7 @@ $principal-font:'Kumbh Sans', sans-serif;
 }
 
 //Short methods
-@mixin flexCenter($direction, $horizontal:center) {
+@mixin flexCenter($direction:row, $horizontal:center) {
     display: flex;
     justify-content: $horizontal;
     align-items: center;
