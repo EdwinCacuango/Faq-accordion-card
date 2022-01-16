@@ -115,12 +115,19 @@ h1, h2 {
   padding-left: 0;
 }
 
+.text-card .accordion-button {
+  font-size: 0.85rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 0;
+}
+
 .text-card .accordion-button:hover {
   color: orange;
 }
 
-.text-card .accordion-button:focus
-.accordion-button::after {
+.text-card .accordion-button::after {
   content: "";
   display: block;
   width: 0.625rem;
@@ -150,6 +157,13 @@ h1, h2 {
 
 .text-card p {
   margin: 0;
+}
+
+.accordion-button .collapsed {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 0;
 }
 
 @media (min-width: 1000px) {
