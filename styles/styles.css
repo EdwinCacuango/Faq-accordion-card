@@ -63,7 +63,7 @@ h1, h2 {
 .card-component {
   margin-top: 35%;
   margin-bottom: 10%;
-  max-width: 20.5rem;
+  width: 20.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +99,7 @@ h1, h2 {
 }
 
 .text-card {
+  width: 20.5rem;
   padding: 1.5625rem;
 }
 
@@ -117,6 +118,7 @@ h1, h2 {
 
 .text-card .accordion-button {
   font-size: 0.85rem;
+  font-weight: bold;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

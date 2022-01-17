@@ -10,7 +10,7 @@
   margin-top: 35%;
   margin-bottom: 10%;
   //
-  max-width: 20.5rem;
+  width: 20.5rem;
   @include flexCenter(column);
   background-color: white;
   border-radius: 1.5rem;
@@ -30,6 +30,7 @@
 }
 
 .text-card {
+  width: 20.5rem;
   padding: 1.5625rem;
   h1 {
     font-size: 1.625rem;
@@ -46,6 +47,7 @@
   }
   .accordion-button{
     font-size: 0.85rem;
+    font-weight: bold;
     justify-content: space-between;
     padding-right: 0;
   }
