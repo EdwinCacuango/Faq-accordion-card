@@ -44,16 +44,11 @@
   .accordion-body {
     padding-left: 0;
   }
-  .accordion-button{
-    font-size: 0.85rem;
-    justify-content: space-between;
-    padding-right: 0;
-  }
 
   .accordion-button:hover{
     color:orange;
   }
-  
+  .accordion-button:focus
   .accordion-button::after {
     content: "";
     display: block;
@@ -79,11 +74,6 @@
   p{
     margin:0;
   }
-}
-
-.accordion-button .collapsed{
-  justify-content: space-between;
-  padding-right: 0;
 }
 
 @media (min-width: 1000px) {
